@@ -5,11 +5,10 @@ require('dotenv').config();
 // VARIAVEIS
 vars = require("./src/handler/vars.js");
 
-
 // CLIENTE
 const client = new ForgeClient({
-    intents: [ "GuildMessages", "Guilds", "MessageContent", "GuildVoiceStates" ],
-    events: [ "clientReady", "debug", "messageCreate" ], 
+    intents: [ "GuildMessages", "Guilds" ],
+    events: [ "clientReady", "debug" ], 
     prefixes: [ "m.", "M." ], 
     extensions: [ new ForgeDB() ],
     prefixCaseInsensitive: true,
@@ -19,21 +18,10 @@ const client = new ForgeClient({
 // CARREGANDO VARIAVEIS
 ForgeDB.variables(vars); //VARIAVEIS DO CLIENTE
    
-// Pasta dos comandos comuns por prefixo
-client.commands.load("./src/commands/dev");
+// Pasta de comandos de eventos
 client.commands.load("./src/commands/events");
-client.commands.load("./src/commands/common");
+// Pasta dos comandos comuns por prefixo
 client.applicationCommands.load("./src/commands/slash");
-
-/*music.commands.add({
-    name: "Debug",
-    type: GuildQueueEvent.Debug,
-    code: `
-    $sendMessage[1497015219816501339;### 🎵 | Debug ForgeMusic - $discordTimestamp[$getTimestamp;ShortTime]
-
-$codeBlock[$env[message];js]]
-`
-});*/
 
 // Token do bot no arquivo .env
 client.login(process.env.BOT_TOKEN);
