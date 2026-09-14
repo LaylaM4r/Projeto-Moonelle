@@ -1,18 +1,26 @@
 {
-  "name": "starryrose",
-  "version": "0.0.1b",
-  "description": "Um bot brasileiro feito em JavaScript usando o pacote ForgeScript para a rede social Discord.",
+  "name": "projeto-moonelle",
+  "version": "0.5b",
+  "description": "App brasileiro feito para o discord com o objetivo de testes mirabolantes.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaylaM4r/Projeto-Moonelle.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LaylaM4r/Projeto-Moonelle/issues"
+  },
+  "homepage": "https://github.com/LaylaM4r/Projeto-Moonelle#readme",
   "dependencies": {
     "@tryforge/forge.db": "^2.1.1",
-    "@tryforge/forgescript": "^2.6.0",
-    "dotenv": "^16.4.7",
-    "sqlite3": "^5.1.7"
+    "@tryforge/forgescript": "github:tryforge/ForgeScript#main",
+    "sqlite3": "^6.0.1"
   }
 }
