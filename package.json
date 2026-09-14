@@ -1,6 +1,6 @@
 {
   "name": "projeto-moonelle",
-  "version": "0.5b",
+  "version": "0.3b",
   "description": "App brasileiro feito para o discord com o objetivo de testes mirabolantes.",
   "main": "index.js",
   "scripts": {
