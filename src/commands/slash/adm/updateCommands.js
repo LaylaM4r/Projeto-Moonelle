@@ -1,4 +1,4 @@
-module.exports = {
+/*module.exports = {
   code: `
     $onlyForUsers[nananinanão;$botOwnerID]
     $updateApplicationCommands
@@ -9,3 +9,4 @@ module.exports = {
     description: "Upd",
   },
 };
+*/
