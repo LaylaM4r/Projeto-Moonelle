@@ -1,5 +1,6 @@
-const { ForgeClient } = require("@tryforge/forgescript");
+const { ForgeClient, LogPriority  } = require("@tryforge/forgescript");
 const { ForgeDB } = require("@tryforge/forge.db");
+const { ForgeCanvas } = require("@tryforge/forge.canvas")
 require('dotenv').config();
 
 // VARIAVEIS
@@ -7,12 +8,17 @@ vars = require("./src/handler/vars.js");
 
 // CLIENTE
 const client = new ForgeClient({
-    intents: [ "GuildMessages", "Guilds" ],
-    events: [ "clientReady", "debug" ], 
-    prefixes: [ "m.", "M." ], 
-    extensions: [ new ForgeDB() ],
+    intents: [ "Guilds", "GuildMembers", "GuildMessages", "GuildMessageReactions", "DirectMessages" ],
+    events: [ "clientReady", "debug", "error", "guildAvailable", "guildCreate", "guildUnavailable", "presenceUpdate", "userUpdate", "voiceStateUpdate" ], 
+    prefixes: [ "m.", ], 
+    extensions: [ new ForgeDB(), new ForgeCanvas() ],
     prefixCaseInsensitive: true,
-    respondOnEdit: true
+    logLevel: LogPriority.High,
+    respondOnEdit: true,
+    trackers: {
+        invites: false,
+        voice: true
+    }
 });
 
 // CARREGANDO VARIAVEIS

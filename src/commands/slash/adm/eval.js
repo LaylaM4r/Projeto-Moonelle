@@ -1,6 +1,6 @@
-module.exports = {
+/*module.exports = {
   code: `
-    $onlyForUsers[nananinanão;$botOwnerID]
+    $onlyForUsers[nananinanão;$botOwnerID;511113438898946068]
     $eval[$option[command]]
   `,
   data: {
@@ -15,4 +15,4 @@ module.exports = {
       }
     ]
   },
-};
+};*/
