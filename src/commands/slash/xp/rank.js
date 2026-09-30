@@ -10,11 +10,11 @@ module.exports = {
   `,
   data: {
     name: "rank",
-    description: "Veja seu nível e posição no ranking do servidor.",
+    description: "[✨] - Veja seu nível e posição no ranking do servidor.",
     options: [
       {
         name: "usuario",
-        description: "Consulte outra pessoa.",
+        description: "[@] - deseja ver de alguma outra pessoa?",
         type: 6,
         required: false,
       },

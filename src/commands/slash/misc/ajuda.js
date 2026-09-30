@@ -21,6 +21,6 @@ module.exports = {
   `,
   data: {
     name: "ajuda",
-    description: "Veja os comandos disponíveis da Moonelle.",
+    description: "[🛟] - Veja os comandos disponíveis da Moonelle.",
   },
 };

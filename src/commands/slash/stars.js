@@ -2,6 +2,7 @@ module.exports = {
   code: `
     $let[userId;$findUser[$option[usuário];true]]
     $let[starsValue;$getUserVar[stars;$get[userId];0]]
+    $disableAllMentions
     $if[$authorID==$get[userId];Você tem;$username[$get[userId]]] $get[starsValue] estrelas
   `,
   data: {

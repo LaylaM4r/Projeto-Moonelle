@@ -9,6 +9,6 @@ module.exports = {
   `,
   data: {
     name: "loja",
-    description: "Veja os títulos cosméticos disponíveis.",
+    description: "[💸] - Veja os títulos cosméticos disponíveis.",
   },
 };

@@ -1,5 +1,6 @@
 module.exports = {
   code: `
+    $disableAllMentions
     $let[userId;$findUser[$option[usuário];true]]
     $let[serverId;$if[$option[servidor]==;$guildID;$if[$guildExists[$option[servidor]]==true;$option[servidor];$guildID]]]
     $if[$authorID==$get[userId];Ver **você** te enche de **DETERMINAÇÃO**]
