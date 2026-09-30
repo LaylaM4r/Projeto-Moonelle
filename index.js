@@ -8,8 +8,8 @@ vars = require("./src/handler/vars.js");
 
 // CLIENTE
 const client = new ForgeClient({
-    intents: [ "Guilds", "GuildMembers", "GuildMessages", "GuildMessageReactions", "DirectMessages" ],
-    events: [ "clientReady", "debug", "error", "guildAvailable", "guildCreate", "guildUnavailable", "presenceUpdate", "userUpdate", "voiceStateUpdate" ], 
+    intents: [ "Guilds", "GuildMembers", "GuildMessages", "GuildMessageReactions", "DirectMessages", "MessageContent" ],
+    events: [ "clientReady", "debug", "error", "guildAvailable", "guildCreate", "guildUnavailable", "presenceUpdate", "userUpdate", "voiceStateUpdate", "messageCreate" ],
     prefixes: [ "m.", ], 
     extensions: [ new ForgeDB(), new ForgeCanvas() ],
     prefixCaseInsensitive: true,
