@@ -17,6 +17,6 @@ module.exports = {
   `,
   data: {
     name: "missao",
-    description: "Acompanhe ou resgate sua missão semanal.",
+    description: "[🎯] - Acompanhe ou resgate sua missão semanal.",
   },
 };

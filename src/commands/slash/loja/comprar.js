@@ -15,11 +15,11 @@ module.exports = {
   `,
   data: {
     name: "comprar",
-    description: "Compre e equipe um título para seu perfil.",
+    description: "[💸] - Compre e equipe um título para seu perfil.",
     options: [
       {
         name: "titulo",
-        description: "Escolha um título da loja.",
+        description: "[📝] - Escolha um título da loja.",
         type: 3,
         required: true,
         choices: [

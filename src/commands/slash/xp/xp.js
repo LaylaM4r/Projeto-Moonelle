@@ -8,8 +8,8 @@ module.exports = {
     $if[$authorID==$get[userId];Você;$username[$get[userId]]] tem **$get[userXP] XP** e está no **nível $get[level]**. Faltam **$get[remaining] XP** para o próximo nível.
   `,
   data: {
-    name: "xp",
-    description: "Consulte seu XP e nível neste servidor.",
+    name: "ver",
+    description: "[✨] - Consulte seu XP e nível neste servidor.",
     options: [
       {
         name: "usuario",
